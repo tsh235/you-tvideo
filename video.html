@@ -49,29 +49,38 @@
     <section class="video">
       <div class="container">
         <div class="video__player">
-          <iframe class="video__iframe" width="100%" height="668" src="https://www.youtube.com/embed/LaJ6fKtz-cM?si=zIpEe5Ej13e9D8Bn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/LaJ6fKtz-cM?si=zIpEe5Ej13e9D8Bn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="video__content">
-          <h2 class="video__title">Философия Идущего к реке</h2>
-  
-          <a class="video__link" href="/favorite">В избранном</a>
-  
-          <p class="video__channel">Правое полушарие интроверта</p>
-  
-          <p class="video__info">
-            <span class="video__views">1&nbsp;575&nbsp;581 просмотр</span>
-            <span class="video__date">Дата премьеры: 16 авг. 2024&nbsp;г.</span>
-          </p>
-  
-          <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+        <div class="video__container">
+          <div class="video__content">
+            <h2 class="video__title">Философия Идущего к реке</h2>
+    
+            <p class="video__channel">Правое полушарие интроверта</p>
+    
+            <p class="video__info">
+              <span class="video__views">1&nbsp;575&nbsp;581 просмотр</span>
+              <span class="video__date">Дата премьеры: 16 авг. 2024&nbsp;г.</span>
+            </p>
+    
+            <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+          </div>
+
+          <button class="video__link video__link_active">
+            <span class="video__no-favorite">В избранное</span>
+            <span class="video__in-favorit">В избранном</span>
+            <svg class="video__icon">
+              <use class="video__icon-in" xlink:href="./img/sprite.svg#star-orange" />
+              <use class="video__icon-no" xlink:href="./img/sprite.svg#star-ob" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
 
     <section class="video-list">
       <div class="container">
-        <h2 class="video-list__title">Похожие видео</h2>
+        <h2 class="video-list__title title">Похожие видео</h2>
 
         <ul class="video-list__items">
           <li class="video-list__item">
@@ -123,16 +132,18 @@
         </svg>
       </a>
 
-      <ul class="footer__developers">
-        <li class="footer__developer">
-          Designer: <a class="footer__developer-link" href="https://t.me/Mrshmallowww" target="_blank" rel="noopener">Anastasia Ilina</a> 
-        </li>
-        <li class="footer__developer">
-          Developer: <a class="footer__developer-link" href="https://tsh-web.ru" target="_blank" rel="noopener">Tatyana Shustrova</a> 
-        </li>
-      </ul>
-
-      <p class="footer__copyright">&copy; You-Tvideo, 2023 </p>
+      <div class="footer__content">
+        <ul class="footer__developers">
+          <li class="footer__developer">
+            Designer: <a class="footer__developer-link" href="https://t.me/Mrshmallowww" target="_blank" rel="noopener">Anastasia Ilina</a> 
+          </li>
+          <li class="footer__developer">
+            Developer: <a class="footer__developer-link" href="https://tsh-web.ru" target="_blank" rel="noopener">Tatyana Shustrova</a> 
+          </li>
+        </ul>
+  
+        <p class="footer__copyright">&copy; You-Tvideo, 2023 </p>
+      </div>
     </div>
   </footer>
   
