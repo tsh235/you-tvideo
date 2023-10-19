@@ -30,6 +30,8 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,6 +43,10 @@ body {
   line-height: 1.2;
   color: #292D32;
   background-color: #FFF6EB;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img,
@@ -280,18 +286,21 @@ iframe {
 }
 
 .video-list__items {
+  --grid-count: 3;
+  --grid-row-gap: 40px;
+  --grid-column-gap: 12px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 12px;
+  grid-template-columns: repeat(
+    var(--grid-count), 
+    calc((100% / var(--grid-count)) - (var(--grid-column-gap) * (var(--grid-count) - 1) / var(--grid-count)))
+  );
+  gap: var(--grid-row-gap) var(--grid-column-gap);
 }
 
 /* Video Card */
 .video-card {
   position: relative;
   width: 100%;
-}
-
-.video-card__link {
 }
 
 .video-card__thumbnail {
@@ -304,6 +313,11 @@ iframe {
   margin-bottom: 10px;
   font-size: 24px;
   letter-spacing: 0.02em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .video-card__channel {
@@ -316,6 +330,10 @@ iframe {
   letter-spacing: 0.02em;
 }
 
+.video-card__link:hover .video-card__title {
+  color: #FF6A00
+}
+
 .video-card__favorite {
   position: absolute;
   top: 12px;
@@ -323,8 +341,8 @@ iframe {
 }
 
 .video-card__icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .video-card__star-orange {
@@ -490,10 +508,10 @@ iframe {
     padding: 60px 0;
   }
   .video-list__items {
-    row-gap: 32px;
+    --grid-row-gap: 32px;
   }
   .video-card__title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .video-card__channel {
     font-size: 16px;
@@ -539,7 +557,7 @@ iframe {
     font-size: 40px;
   }
   .video-list__items {
-    grid-template-columns: repeat(2, 1fr);
+    --grid-count: 2;
   }
   .video__player {
     margin-bottom: 24px;
@@ -608,8 +626,8 @@ iframe {
     padding: 40px 0;
   }
   .video-list__items {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+    --grid-count: 1;
+    --grid-row-gap: 20px;
   }
   .video-card__title {
     margin-bottom: 6px;
