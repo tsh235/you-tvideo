@@ -306,6 +306,8 @@ iframe {
 .video-card__thumbnail {
   margin-bottom: 12px;
   width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -349,11 +351,11 @@ iframe {
   display: none;
 }
 
-.video-card__favorite_active .video-card__star-white {
+.video-card__favorite.active .video-card__star-white {
   display: none;
 }
 
-.video-card__favorite_active .video-card__star-orange {
+.video-card__favorite.active .video-card__star-orange {
   display: block;
 }
 
@@ -410,19 +412,19 @@ iframe {
   display: none;
 }
 
-.video__link.video__link_active .video__no-favorite {
+.video__link.active .video__no-favorite {
   display: none;
 }
 
-.video__link.video__link_active .video__icon-no {
+.video__link.active .video__icon-no {
   display: none;
 }
 
-.video__link.video__link_active .video__in-favorit {
+.video__link.active .video__in-favorit {
   display: block;
 }
 
-.video__link.video__link_active .video__icon-in {
+.video__link.active .video__icon-in {
   display: block;
 }
 
