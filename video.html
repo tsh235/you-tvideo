@@ -11,120 +11,14 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 
+  <script src="/js/navigo.min.js" defer></script>
   <script src="/js/main.js" defer></script>
 </head>
 <body>
 
-  <header class="header">
-    <div class="container header__container">
-      <a class="header__link" href="/">
-        <svg class="header__logo" role="img" aria-label="Логотип видеохостинга You-Tvideo">
-          <use xlink:href="./img/sprite.svg#logo-orange" />
-        </svg>
-      </a>
-
-      <a class="header__link header__link_favorite" href="/favorite.html">
-        <span>Избранное</span>
-        <svg class="header__icon">
-          <use xlink:href="./img/sprite.svg#star-ob" />
-        </svg>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <h1 class="visually-hidden">Видеохостинг You-Tvideo - видео</h1>
-
-    <div class="search">
-      <div class="container">
-        <form class="search__form">
-          <input class="search__input" type="search" placeholder="Найти видео...">
-          <button class="search__btn" type="submit">поиск
-            <svg class="search__icon">
-              <use xlink:href="./img/sprite.svg#search" />
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <section class="video">
-      <div class="container">
-        <div class="video__player">
-          <iframe class="video__iframe" src="https://www.youtube.com/embed/LaJ6fKtz-cM?si=zIpEe5Ej13e9D8Bn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
-        <div class="video__container">
-          <div class="video__content">
-            <h2 class="video__title">Философия Идущего к реке</h2>
-    
-            <p class="video__channel">Правое полушарие интроверта</p>
-    
-            <p class="video__info">
-              <span class="video__views">1&nbsp;575&nbsp;581 просмотр</span>
-              <span class="video__date">Дата премьеры: 16 авг. 2024&nbsp;г.</span>
-            </p>
-    
-            <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
-          </div>
-
-          <button class="video__link favorite">
-            <span class="video__no-favorite">В избранное</span>
-            <span class="video__in-favorit">В избранном</span>
-            <svg class="video__icon">
-              <use class="video__icon-in" xlink:href="./img/sprite.svg#star-orange" />
-              <use class="video__icon-no" xlink:href="./img/sprite.svg#star-ob" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="video-list">
-      <div class="container">
-        <h2 class="video-list__title title">Похожие видео</h2>
-
-        <ul class="video-list__items">
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="/video.html?id=12dfddgdg55ygy5">
-                <img class="video-card__thumbnail" src="./img/img-01.jpg" alt="Превью видео Философия Идущего к реке">
-                <h3 class="video-card__title">Философия Идущего к реке</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </a>
-
-              <button class="video-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg class="video-card__icon">
-                  <use class="video-card__star-white" xlink:href="./img/sprite.svg#star-white" />
-                  <use class="video-card__star-orange" xlink:href="./img/sprite.svg#star-orange" />
-                </svg>
-              </button>
-            </article>
-          </li>
-
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="/video.html?id=12dfddgdg55ygy5">
-                <img class="video-card__thumbnail" src="./img/img-02.jpg" alt="Превью видео Как выжить в Средние века?">
-                <h3 class="video-card__title">Как выжить в Средние века?</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </a>
-              
-              <button class="video-card__favorite" type="button" aria-label="Добавить в избранное">
-                <svg class="video-card__icon">
-                  <use class="video-card__star-white" xlink:href="./img/sprite.svg#star-white" />
-                  <use class="video-card__star-orange" xlink:href="./img/sprite.svg#star-orange" />
-                </svg>
-              </button>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
+  <h1 class="visually-hidden">Видеохостинг You-Tvideo - избранное</h1>
+  
+  <main></main>
 
   <footer class="footer">
     <div class="container footer__container">
