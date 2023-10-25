@@ -29,7 +29,6 @@ const preload = {
 
 preload.init();
 
-// конвертация времени, 1й способ
 const convertedTime = (duration) => {
   const result = duration.replace('PT', '')
     .replace('H', ' ч ')
